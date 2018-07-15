@@ -13,7 +13,7 @@ export const fetchData = () => {
   return async dispatch => {
     const res = await axios("https://jsonplaceholder.typicode.com/posts");
     const data = await res.data;
-    console.log(data);
+    // console.log(data);
     dispatch({ type: FETCH_DATA, payload: data });
   };
 };
