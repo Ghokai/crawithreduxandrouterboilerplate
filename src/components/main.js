@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Counter from "./Counter";
+import Counter from "./counter";
+import PostList from "./postList";
 
 class About extends Component {
   render() {
@@ -20,6 +21,7 @@ const Main = () => (
       <Route exact path="/" component={Counter} />
       <Route path="/about" component={About} />
       <Route path="/more" component={More} />
+      <Route path="/posts" component={PostList} />
     </Switch>
   </main>
 );
